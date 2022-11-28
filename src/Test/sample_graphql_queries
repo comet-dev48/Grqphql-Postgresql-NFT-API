@@ -1,0 +1,114 @@
+query {
+  format(lang:"en"){
+    date,
+    datetime,
+    price,
+    eth_price,
+    percentage
+  }
+  collections(limit:2){
+    id,
+    name,
+    img,
+    short_description,
+    description,
+    contract,
+    volume,
+    transfers,
+    minters,
+    market_cap,
+    floor_price,
+    avg_price,
+    owners,
+    circulating_supply,
+    volume_change,
+    market_cap_eth,
+    floor_price_change,
+    avg_price_change
+  }
+}
+
+//mint tracker
+query {
+  collections(limit:100){
+    id,
+    name,
+    img,
+    minters,
+    first_mint,
+    fomo,
+    mints,
+    mints_change,
+    mint_volume,
+    mint_volume_change,
+    minters_change,
+    mint_whales,
+    mint_whales_change,
+    mint_cost
+  }
+}
+
+//smart movers
+query{
+  smartMovers(limit:100){
+    mover_name,
+    mover_type,
+    mover_address,
+    move,
+    quantity,
+    collection,
+    id,
+    value,
+    gas_fee,
+    when
+  }
+}
+
+query{
+	distribution(id:"minting_volume"){
+   id,
+   name,
+   volume,
+    elements(limit:2){
+      name
+    }
+  }
+}
+
+query{
+  stories{
+    id,
+    comments{
+      id,
+      isAnonymous
+    }
+  }
+}
+
+//collection page
+query{
+  collection(id:1){
+    name,
+    description,
+    img
+  }  
+  distribution(id:"collection_listing_and_floor"){
+    id,
+    name,
+    volume,
+      elements(limit:2){
+        name,
+        value 
+      }
+  }
+  nfts(limit:4, rank_by:"top_sales"){
+    id,
+    name,
+    price,
+    last_price,
+    img,
+    tag,
+    rank
+  }
+}
+

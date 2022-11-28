@@ -1,0 +1,11 @@
+[RS-DEBUG] [2022-11-28 02:46:47] [graphql]:  GraphQl request received from with method  
+[RS-WARN] [2022-11-28 02:47:09] [graphql]:  HTTP Method "" is not supported 
+[RS-WARN] [2022-11-28 02:47:10] [graphql]:  #0 D:\rarespot_be\microservices\rs-api\vendor\webonyx\graphql-php\src\Server\Helper.php(110): GraphQL\Server\Helper->parseRequestParams(NULL, Array, Array)#1 D:\rarespot_be\microservices\rs-api\vendor\webonyx\graphql-php\src\Server\StandardServer.php(129): GraphQL\Server\Helper->parseHttpRequest()#2 D:\rarespot_be\microservices\rs-api\vendor\webonyx\graphql-php\src\Server\StandardServer.php(104): GraphQL\Server\StandardServer->executeRequest(NULL)#3 D:\rarespot_be\microservices\rs-api\src\graphql.php(124): GraphQL\Server\StandardServer->handleRequest()#4 {main} 
+[RS-DEBUG] [2022-11-28 02:48:38] [graphql]:  Quering: SELECT token_address, token_id FROM nfts WHERE token_address = q and token_id = 1  
+[RS-DEBUG] [2022-11-28 02:49:16] [graphql]:  Quering: SELECT token_address, token_id FROM nfts WHERE token_address = q and token_id = 1  
+[RS-DEBUG] [2022-11-28 02:52:45] [graphql]:  Quering: SELECT token_address, token_id FROM nfts WHERE token_address = q and token_id = 1  
+[RS-DEBUG] [2022-11-28 02:53:37] [graphql]:  Quering: SELECT token_address, token_id FROM nfts WHERE token_address = 'q' and token_id = 1  
+[RS-DEBUG] [2022-11-28 02:54:34] [graphql]:  Quering: SELECT token_address, token_id FROM nfts WHERE token_address = q and token_id = '1'  
+[RS-DEBUG] [2022-11-28 02:54:51] [graphql]:  Quering: SELECT token_address, token_id FROM nfts WHERE token_address = 'q' and token_id = '1'  
+[RS-DEBUG] [2022-11-28 02:55:56] [graphql]:  Quering: SELECT token_address, token_id FROM nfts WHERE token_address = 'p' and token_id = '1'  
+[RS-DEBUG] [2022-11-28 02:58:07] [graphql]:  Quering: SELECT token_address, token_id FROM nfts WHERE token_address = 'p' and token_id = '1'  
